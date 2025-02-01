@@ -19,6 +19,7 @@
         .adlam-display-regular {
             font-family: "ADLaM Display", sans-serif;
         }
+
         .sora-regular {
             font-family: "Sora", sans-serif;
         }
@@ -27,9 +28,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="md:container mx-auto">
         <!-- navbar section -->
-        <nav class="sora-regular flex justify-between bg-[#FFF9F4] md:container mx-auto mt-4 mb-4">
+        <nav class="sora-regular flex overflow-hidden justify-between bg-[#FFF9F4] mt-4 mb-4">
             <div class="flex items-center gap-x-3">
                 <img src="c1-assets/logo-header.png" alt="">
                 <h2 class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
@@ -41,11 +42,11 @@
                     <li>Contact us</li>
                 </ul>
             </div>
-            <div class="space-x-1">
+            <div>
                 <i class="fa-regular fa-bell"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <button class="btn border-[#FFDC26] w-28 h-12 text-xl font-normal">Login</button>
-                <button class="btn bg-[#FFDC26] w-28 h-12 text-xl font-normal">Register</button>
+                <button class="btn border-[#FFDC26] lg:w-28 lg:h-12 text-xl font-normal">Login</button>
+                <button class="btn bg-[#FFDC26] lg:w-28 lg:h-12 text-xl font-normal">Register</button>
             </div>
         </nav>
 
@@ -53,7 +54,8 @@
         <div class="flex">
             <div>
                 <h1 class="">Pamper Your Pet, Because They Deserve the Best</h1>
-                <p class="">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                <p class="">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
+                    and make tails wag with joy!
                 </p>
                 <button class="btn bg-[#FFDC26]">Find a pet</button>
             </div>
@@ -65,8 +67,35 @@
     <main>
 
     </main>
-    <footer>
-
+    <footer class="w-full bg-[rgba(255,220,38,0.5)]">
+        <!-- browse section -->
+        <div class="flex flex-col lg:flex-row sora-regular lg:justify-between lg:items-center md:container ml-4 lg:mx-auto">
+            <div>
+                <div class="flex items-center mb-8 mt-20">
+                    <img src="c1-assets/logo-footer.png" alt="">
+                    <h2 class="text-2xl font-normal ml-3">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                </div>
+                <p class="text-xl font-normal w-[426px] mb-20">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+            </div>
+            <!-- link section -->
+            <div class="mt-12">
+                <ul>
+                    <li class="mb-8 text-xl font-normal">Find a pet</li>
+                    <li class="mb-8 text-xl font-normal">Breeds</li>
+                    <li class="mb-8 text-xl font-normal">Contact us</li>
+                </ul>
+            </div>
+            <!-- social section -->
+            <div class="mt-16">
+                <h4 class="font-medium text-base mb-2">Follow Us</h4>
+                <div class="space-x-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
