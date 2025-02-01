@@ -30,36 +30,58 @@
 <body>
     <header class="md:container mx-auto">
         <!-- navbar section -->
-        <nav class="sora-regular flex overflow-hidden justify-between bg-[#FFF9F4] mt-4 mb-4">
+        <nav class="sora-regular flex justify-between bg-[#FFF9F4] mt-4 mb-4">
             <div class="flex items-center gap-x-3">
-                <img src="c1-assets/logo-header.png" alt="">
-                <h2 class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                <img src="c1-assets/logo-header.png" alt="Logo">
+                <h2 class="text-2xl invisible lg:visible">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
             </div>
-            <div class="">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li>Find a pet</li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact</a></li>
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn border-[#FFDC26] text-xl font-normal px-8 py-2">Login</button>
+                    <button class="btn bg-[#FFDC26] px-8 py-2 text-xl font-normal">Register</button>
+                </ul>
+            </div>
+            <div class="invisible lg:visible">
                 <ul class="lg:flex px-1 menu menu-horizontal text-xl gap-x-8">
                     <li>Find a pet</li>
                     <li>Breeds</li>
                     <li>Contact us</li>
                 </ul>
             </div>
-            <div>
+            <div class="invisible lg:visible">
                 <i class="fa-regular fa-bell"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <button class="btn border-[#FFDC26] lg:w-28 lg:h-12 text-xl font-normal">Login</button>
-                <button class="btn bg-[#FFDC26] lg:w-28 lg:h-12 text-xl font-normal">Register</button>
+                <button class="btn border-[#FFDC26] text-xl font-normal px-8 py-2">Login</button>
+                <button class="btn bg-[#FFDC26] px-8 py-2 text-xl font-normal">Register</button>
             </div>
         </nav>
 
         <!-- hero section -->
-        <div class="flex">
-            <div>
-                <h1 class="">Pamper Your Pet, Because They Deserve the Best</h1>
-                <p class="">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
+        <div class="lg:relative mt-20 mb-36 max-w-[1320px] mx-auto">
+            <div class="lg:absolute lg:bottom-35">
+                <h1 class="text-[56px] adlam-display-regular font-normal mb-4 max-w-[680px]">Pamper Your Pet,<br>
+                    Because They Deserve <br> the Best</h1>
+                <p class="adlam-display-regular font-normal text-xl mb-6 text-[rgba(17,17,17,0.7)]">Discover a world of
+                    treats, toys, and essentials handpicked for <br> your furry friends. Shop now
                     and make tails wag with joy!
                 </p>
-                <button class="btn bg-[#FFDC26]">Find a pet</button>
+                <button class="btn bg-[#FFDC26] px-8 py-2 text-xl font-normal">Find a pet</button>
+                <!-- <img src="c1-assets/cat-big.png" class=""> -->
             </div>
-            <div>
+            <div class="">
                 <img src="c1-assets/cat-big.png" class="">
             </div>
         </div>
@@ -69,13 +91,15 @@
     </main>
     <footer class="w-full bg-[rgba(255,220,38,0.5)]">
         <!-- browse section -->
-        <div class="flex flex-col lg:flex-row sora-regular lg:justify-between lg:items-center md:container ml-4 lg:mx-auto">
+        <div
+            class="flex flex-col lg:flex-row sora-regular lg:justify-between lg:items-center md:container ml-4 lg:mx-auto">
             <div>
                 <div class="flex items-center mb-8 mt-20">
                     <img src="c1-assets/logo-footer.png" alt="">
                     <h2 class="text-2xl font-normal ml-3">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
                 </div>
-                <p class="text-xl font-normal w-[426px] mb-20">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+                <p class="text-xl font-normal w-[426px] mb-20">Discover a world of treats, toys, and <br> essentials
+                    handpicked for your furry <br> friends</p>
             </div>
             <!-- link section -->
             <div class="mt-12">
