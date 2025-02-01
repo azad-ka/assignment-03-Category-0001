@@ -13,13 +13,14 @@
     <!-- DaisyUi CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e43fa572c2.js" crossorigin="anonymous"></script>
 
     <style>
         .adlam-display-regular {
-            font-family: "ADLaM Display", serif;
+            font-family: "ADLaM Display", sans-serif;
         }
         .sora-regular {
-            font-family: "Sora", serif;
+            font-family: "Sora", sans-serif;
         }
     </style>
 
@@ -27,7 +28,39 @@
 
 <body>
     <header>
-        
+        <!-- navbar section -->
+        <nav class="sora-regular flex justify-between bg-[#FFF9F4] md:container mx-auto mt-4 mb-4">
+            <div class="flex items-center gap-x-3">
+                <img src="c1-assets/logo-header.png" alt="">
+                <h2 class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+            </div>
+            <div class="">
+                <ul class="lg:flex px-1 menu menu-horizontal text-xl gap-x-8">
+                    <li>Find a pet</li>
+                    <li>Breeds</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="space-x-1">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="btn border-[#FFDC26] w-28 h-12 text-xl font-normal">Login</button>
+                <button class="btn bg-[#FFDC26] w-28 h-12 text-xl font-normal">Register</button>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="flex">
+            <div>
+                <h1 class="">Pamper Your Pet, Because They Deserve the Best</h1>
+                <p class="">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                </p>
+                <button class="btn bg-[#FFDC26]">Find a pet</button>
+            </div>
+            <div>
+                <img src="c1-assets/cat-big.png" class="">
+            </div>
+        </div>
     </header>
     <main>
 
